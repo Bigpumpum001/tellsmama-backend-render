@@ -18,9 +18,9 @@ router.post('/', async (req, res) => {
         if (isNaN(price) || price < 0) {
             return res.status(400).json({ message: 'Price must be a non-negative number.' });
         }
-         if (!mongoose.Types.ObjectId.isValid(created_by)) {
-            return res.status(400).json({ message: 'Invalid created_by ID format.' });
-        }
+        //  if (!mongoose.Types.ObjectId.isValid(created_by)) {
+        //     return res.status(400).json({ message: 'Invalid created_by ID format.' });
+        // }
         //  const userExists = await User.findById(created_by);
         // if (!userExists) {
         //     return res.status(404).json({ message: 'Creator (User ID) not found.' });
