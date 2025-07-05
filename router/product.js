@@ -4,7 +4,7 @@ const Product = require('../model/Product')
 const { default: mongoose } = require('mongoose')
 
 router.post('/', async (req, res) => {
-    console.log('REQ BODY:', req.body)
+    // console.log('REQ BODY:', req.body)
     try {
         const { name, price, category, subCategory, imageUrl, created_by } = req.body
         // if (!created_by) {
